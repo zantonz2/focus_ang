@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset='UTF-8'>
+	<link href='css/bootstrap.css' rel='stylesheet'>
+	<script type="text/javascript" src='js/angular.min.js'></script>
+</head>
+<body>
+	<section ng-controller="panelController as panel">
+		<ul class="nav nav-pils">
+			<li><a href ng-click="panel.setPanel(1)">Description</a></li>
+			<li><a href ng-click="panel.setPanel(2)">Specifications</a></li>
+			<li><a href ng-click="panel.setPanel(3)">Reviews</a></li>
+		</ul>
+
+
+		<div class="panel" ng-show="panel.selectPanel(1)">
+		 	<h4>Description</h4>
+		 	<blockquote>None yet</blockquote>
+		</div>
+
+		<div class="panel" ng-show="panel.selectPanel(2)">
+		 	<h4>Specificacions</h4>
+		 	<blockquote>None yet</blockquote>
+		</div>
+
+		<div class="panel" ng-show="panel.selectPanel(3)">
+		 	<h4>Reviews</h4>
+		 	<blockquote>None yet</blockquote>
+		</div>
+	</section>
+	
+	 <!--ng-class='{active: tab===1}-->
+
+	<script type="text/javascript" src='js/app2.js'></script>
+</body>
+</html>
