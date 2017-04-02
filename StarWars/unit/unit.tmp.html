@@ -1,7 +1,7 @@
 <div>
-	<div><span class="unit__name">{{unit.name}}</span></div> 
+	<div class="unit__name">{{unit.name}}</div> 
 	<svg class="svg" style={{"fill:"+unit.eye_color}} ng-click="http.clickUnit($index)">
 		<use xlink:href={{"unit/img/sprite.svg#"+unit.gender}}></use>
 	</svg>
-	<div> <span class="unit__planet">C планеты: {{unit.planet}} </span></div>
+	<div class="unit__planet"> C планеты: {{unit.planet}} </div>
 </div>

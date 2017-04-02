@@ -30,6 +30,8 @@ body {
 .unit__planet {
 	text-align: center;
 	line-height:2.5rem;
+	height: 2.5rem;
+	overflow: hidden;
 }
 
 .svg {
@@ -52,7 +54,6 @@ body {
 	border-collapse: collapse;
 }
 
-
 .text_center {
 	text-align: center;
 	line-height: 4rem;
@@ -71,4 +72,9 @@ body {
 	line-height: 2.5rem;
 	width: 10rem;
 	font-weight: 800;
+}
+
+.page-header {
+	text-align: center;
+	text-shadow: 3px 2px 4px rgba(108, 103, 186, 1);
 }
