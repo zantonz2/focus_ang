@@ -27,7 +27,7 @@
 		}
 	});*/
 
-	app.controller('drawProduct', function ($http, $scope){
+	app.controller('drawProduct', function ($http){
         var aliasThis=this;
         $scope.showListProduct=true;
         $http.get('js/app/pod.json').then(

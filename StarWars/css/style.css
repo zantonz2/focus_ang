@@ -1,0 +1,74 @@
+body {
+	background: #ffffff;
+	font-size: 150%;
+}
+
+.wrapper {
+	margin:0 auto;
+	min-width: 80rem;
+	max-width: 140rem;
+}
+
+.unit {
+	display: inline-block;
+	width: 18rem;
+	height: 18rem;
+	text-align: center;
+	margin: 1rem;
+	border-radius: 1rem;
+	border: .2rem solid #dddddd;
+	padding: .5rem 0;
+}
+
+.unit__name {
+	color:blue;
+	font-size: 1.5rem;
+	line-height:2.5rem;
+	font-weight: 800;
+}
+
+.unit__planet {
+	text-align: center;
+	line-height:2.5rem;
+}
+
+.svg {
+	cursor:pointer;
+	width: 10rem;
+	height: 12rem;
+}
+
+.modal-body {
+	padding: 1rem 3rem;
+}
+.svg_modal {
+	width: 20rem;
+	height: 30rem;;
+}
+.modal__table {
+	margin-right: .1rem;
+	float:right; 
+	border: .1rem solid #dddddd;
+	border-collapse: collapse;
+}
+
+
+.text_center {
+	text-align: center;
+	line-height: 4rem;
+	height: 4rem;
+	color:blue;
+	font-weight: 800;
+}
+.column {
+	border-top: .1rem solid #dddddd;
+	width: 20rem;
+	line-height: 3rem;
+}
+
+.firstColumn {
+	border-top: .1rem solid #dddddd;
+	line-height: 2.5rem;
+	width: 10rem;
+	font-weight: 800;
+}

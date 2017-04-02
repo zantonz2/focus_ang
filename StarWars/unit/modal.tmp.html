@@ -1,0 +1,43 @@
+<div class="modal fade myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Заголовок модального окна -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">{{units[ind].name}}</h4>
+      </div>
+      <!-- Основное содержимое модального окна -->
+      <div class="modal-body">
+        <svg class="svg_modal" style={{"fill:"+units[ind].eye_color}}>
+          <use xlink:href={{"unit/img/sprite.svg#"+units[ind].gender}}></use>
+        </svg>
+        <table class="modal__table">
+          <tr>
+            <th colspan="2" class="text_center">{{units[ind].name}}</th>
+          </tr>
+          <tr>
+            <td class="firstColumn">Пол: </td><td class="column"> {{units[ind].gender|gender}} </td>
+          </tr>
+         <tr>
+            <td class="firstColumn">Рост: </td><td class="column"> {{units[ind].height}} см.</td>
+          </tr>
+          <tr>
+            <td class="firstColumn">Вес: </td><td class="column"> {{units[ind].mass}} кг. </td>
+          </tr>
+          <tr>
+            <td class="firstColumn">Цвет глаз: </td><td class="column"> {{units[ind].eye_color}}</td>
+          </tr>
+         <tr> <td class="firstColumn">Цвет кожи: </td><td class="column"> {{units[ind].skin_color}} </td>  </tr>
+         <tr><td class="firstColumn">Цвет волос: </td><td class="column"> {{units[ind].hair_color}} </td>   </tr>
+           <tr>
+            <td class="firstColumn">Родная планета: </td><td class="column"> {{units[ind].planet}} </td>
+          </tr>
+        </table>
+      </div>
+      <!-- Футер модального окна -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>

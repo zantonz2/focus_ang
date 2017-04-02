@@ -1,0 +1,32 @@
+<html ng-app="SWapp">
+<head>
+
+	<link href='css/bootstrap.css' type="text/css" rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script type="text/javascript" src="js/vendor/angular.min.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="js/vendor/bootstrap.js"></script>
+	
+	<meta charset='UTF-8'>
+</head>
+<body class='main__body'>
+<div class="wrapper" ng-controller="httpRequest as http">
+	<header class="page-header"> <h1>STAR WAR People</h1></header>
+	<nav>
+		<ul class="nav nav-tabs">
+			<li  ng-class="{active:(checkGender==='male')}" ng-click="http.setGender('male')"><a href=""> Мужчины </a></li>
+			<li ng-class="{active:(checkGender==='female')}" ng-click="http.setGender('female')"><a href=""> Женщины </a></li>
+			<li ng-class="{active:(checkGender==='n/a')}" ng-click="http.setGender('n/a')"><a href=""> Роботы </a></li>
+			<li ng-class="{active:(checkGender==='all')}" ng-click="http.setGender('all')"><a href=""> Выбрать всех </a></li>
+		</ul>
+	</nav>
+		
+			<modal-window></modal-window>
+			<star-war-unit ng-repeat="unit in units" class="unit" ng-show=" http.showUnit($index)"></star-war-unit>
+		
+	<script type="text/javascript" src="js/SWapp.js"></script>
+	<script type="text/javascript" src="js/SWapp.directive.js"></script>
+</div>
+</body>
+</html>
