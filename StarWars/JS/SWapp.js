@@ -1,5 +1,4 @@
 (function(){
-	(function(){
 	var SW=angular.module('SWapp',['SWapp-directive']);
 
 
@@ -116,5 +115,4 @@
 		}
 	})
 
-	})()
 })()
